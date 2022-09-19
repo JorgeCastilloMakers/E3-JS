@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 60px;
+    color: #fafafa;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 10px;
+    filter: drop-shadow(5px 5px 10px #000);
+    text-align: center;
+    background-color: #000;
+}
+.container > h2{
+    color: #630a6b;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    width: 70%;
+    padding-bottom: 20px;
+}
+.container > a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fafafa;
+    filter: drop-shadow(5px 5px 10px #000);
+    font-size: 20px;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    color: #630a6b;
+}
+@media (max-width: 690px){
+    .container{
+        background-position: center;
+    }
+}
+
+.container > .card-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.container > .card-container > .lista {
+    background-color: rgba(250, 235, 215, 0.021);
+    backdrop-filter: blur(1px);
+    width: 95%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(185, 121, 0);
+}
+.container > .card-container > .lista > h2{
+    color: #fafafa;
+    text-transform: uppercase;
+    font-weight: 900;
+
+}
+.container > .card-container > form{
+    background-color: rgba(250, 235, 215, 0.021);
+    backdrop-filter: blur(1px);
+    width: 95%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(185, 121, 0);
+}
+.card{
+    background-color: rgba(250, 235, 215, 0.486);
+    backdrop-filter: blur(1px);
+    width: 95%;
+    height: 100%;
+}
+
+.card > .image-container{
+    width: 100%;
+}
+
+.card > .image-container > img{
+    max-width: 150px;
+}
