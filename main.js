@@ -13,10 +13,18 @@
 
 
 const emptyError = () =>{
-    console.log("no pongas campo vacio")
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'No debes dejar el campo vacío, prueba con un número',
+      })
 }
 const errorId = () =>{
-    console.log("no coincide el id")
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'No encontramos una pizza que coincida con ese numero, prueba otro.',
+      })
 }
 
 const renderPizza = (pizza) => {
@@ -25,7 +33,7 @@ const renderPizza = (pizza) => {
         <h2>${pizza.nombre}</h2>
         <h2>$ ${pizza.precio}</h2>
         <h3>Ingredientes:</h3>
-        <div>${pizza.ingredientes.join(" - ")}</div>
+        <div class="ingredientes">${pizza.ingredientes.join(" - ")}</div>
         
         `
 }

@@ -81,6 +81,11 @@ h1{
     font-weight: 900;
 
 }
+.container > .card-container > .lista > ul > li{
+    list-style: none;
+    color: #fafafa;
+
+}
 .container > .card-container > form{
     background-color: rgba(250, 235, 215, 0.021);
     backdrop-filter: blur(1px);
@@ -93,17 +98,41 @@ h1{
     border-radius: 10px;
     border: 1px solid rgb(185, 121, 0);
 }
+.container > .card-container > form > label {
+    color: #fafafa;
+}
 .card{
-    background-color: rgba(250, 235, 215, 0.486);
+    background-color: rgba(250, 235, 215, 0.021);
     backdrop-filter: blur(1px);
     width: 95%;
-    height: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid rgb(185, 121, 0);
+    gap: 10px;
 }
 
 .card > .image-container{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card > .image-container > img{
-    max-width: 150px;
+    max-width: 200px;
+}
+
+.card > h2 {
+    color: #fafafa;
+
+}
+.card > h3{
+    color: #fafafa;
+}
+.ingredientes{
+    color: #fafafa;
 }
